@@ -65,6 +65,13 @@ public class StudentList {
         return null;
     }
 
+    public Student findStudentByObject(Student student) {
+        if (students.contains(student)){
+            return student;
+        }
+        return null;
+    }
+
     public ArrayList<Student> getStudents() {
         return students;
     }
